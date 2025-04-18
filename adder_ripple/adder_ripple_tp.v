@@ -17,7 +17,7 @@ initial begin
     $dumpfile("adder_ripple.vcd");
     $dumpvars(0, adder_tp);
 
-          a = 4'b0100; b = 4'b0011; // 4 + 3 = 7
+        a = 4'b0100; b = 4'b0011; // 4 + 3 = 7
     #STEP a = 4'b0100; b = 4'b0100; // 4 + 4 = 8
     #STEP a = 4'b1100; b = 4'b1100; // -4 + -4 = -8
     #STEP a = 4'b1100; b = 4'b1011; // -4 + -5 = -9

@@ -18,10 +18,10 @@ initial begin
     $dumpfile("adder_vf.vcd");
     $dumpvars(0, adder_tp);
 
-          a = 4'b0100; b = 4'b0011; // 4 + 3 -> VF = 0
+        a = 4'b0100; b = 4'b0011; // 4 + 3 -> VF = 0
     #STEP a = 4'b0100; b = 4'b0100; // 4 + 4 -> VF = 1
     #STEP a = 4'b1100; b = 4'b1100; // -4 + -4 -> VF = 0
-    #STEP a = 4'b1100; b = 4'b1011; // -4 + -5 -> VF = 
+    #STEP a = 4'b1100; b = 4'b1011; // -4 + -5 -> VF =
     #STEP $finish;
 end
 

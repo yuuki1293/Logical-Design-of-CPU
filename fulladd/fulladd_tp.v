@@ -37,7 +37,7 @@ initial begin
     $dumpfile("fulladd.vcd");
     $dumpvars(0, fulladd_tp);
 
-          A = 1'b0; B = 1'b0; CIN = 1'b0; // 0 + 0 + 0 -> Q = 0, COUT = 0
+        A = 1'b0; B = 1'b0; CIN = 1'b0; // 0 + 0 + 0 -> Q = 0, COUT = 0
     #STEP A = 1'b0; B = 1'b0; CIN = 1'b1; // 0 + 0 + 1 -> Q = 1, COUT = 0
     #STEP A = 1'b0; B = 1'b1; CIN = 1'b0; // 0 + 1 + 0 -> Q = 1, COUT = 0
     #STEP A = 1'b0; B = 1'b1; CIN = 1'b1; // 0 + 1 + 1 -> Q = 0, COUT = 1
