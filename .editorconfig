@@ -1,0 +1,20 @@
+# This is an .editorconfig file for Verilog development
+# It helps maintain consistent coding styles across different editors and IDEs
+
+root = true
+
+[*.v]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.sv]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
