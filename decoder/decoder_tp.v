@@ -31,8 +31,8 @@ initial begin
     #STEP   res = 0;
             INST = { `OP_LOADI, 3'b001, 9'h6 };
     #STEP   INST = { `OP_LOADI, 3'b010, 9'h3 };
-    #STEP   INST = { `OP_ADD, 3'b011, 3'b001, 3'b010 };
-    #STEP   INST = { `OP_SUB, 3'b011, 3'b011, 3'b001 };
+    #STEP   INST = { `OP_ADD, 3'b011, 3'b001, 3'b010, 3'b000 };
+    #STEP   INST = { `OP_SUB, 3'b011, 3'b011, 3'b001, 3'b000 };
     #(STEP*10)
         $finish;
 end

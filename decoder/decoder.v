@@ -23,11 +23,11 @@ module decoder(clk, res, INST, OP, LSEL, RSEL, OSEL, LOUT, ROUT, OIN, Rbus);
             OP <= INST[`INST_OP];
 
             if (INST[`INST_OP] == `OP_ADD
-                && INST[`INST_OP] == `OP_ADD
-                && INST[`INST_OP] == `OP_SUB
-                && INST[`INST_OP] == `OP_AND
-                && INST[`INST_OP] == `OP_OR
-                && INST[`INST_OP] == `OP_XOR) begin
+                || INST[`INST_OP] == `OP_ADD
+                || INST[`INST_OP] == `OP_SUB
+                || INST[`INST_OP] == `OP_AND
+                || INST[`INST_OP] == `OP_OR
+                || INST[`INST_OP] == `OP_XOR) begin
                 LSEL <= INST[`INST_Rs];
                 LOUT <= 1'b1;
                 RSEL <= INST[`INST_Rt];
